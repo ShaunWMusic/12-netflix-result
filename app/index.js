@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-
+import
 
 // Create Variables for the search form, search input, and search result
 ((data) => {
