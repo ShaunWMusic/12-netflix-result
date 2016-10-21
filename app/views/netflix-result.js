@@ -1,5 +1,5 @@
-export default NetflixResultView(el, model) {
-  constructor(el, model) {
+export default class NetflixResultView(data) {
+  constructor(model) {
     this.el = el;
     this.model = model;
 
@@ -30,4 +30,4 @@ export default NetflixResultView(el, model) {
     this.el.querySelector('.result-summary').innerText = this.model.summary;
     this.el.querySelector('.result-actors').innerText = this.model.show_cast;
   }
-}
+};
