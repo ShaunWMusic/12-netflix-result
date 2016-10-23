@@ -7,22 +7,10 @@ const resultEl = document.querySelector('.result');
 
 const resultView = new NetflixResultView(resultEl, {});
 
-fetch('http://netflixroulette.net/api/api.php?title=Scrubs')
+fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
   .then((res) => res.json())
   .then((data) => {
     resultView.model = data;
     resultView.render();
+    searchBar.addEventListener('click', fetch);
   });
-
-// debugger;
-// const view = new NetflixResultView(r, data);
-  // function afterData(shows) {
-  //   fillResultsList(r, shows);
-  // }
-
-  // function afterClick() {
-  //   data(i.value)
-  // .then(afterData);
-  // }
-
-// f.addEventListener('click', afterClick);
