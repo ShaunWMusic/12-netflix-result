@@ -16,7 +16,7 @@ function startSearch(term) {
       resultView.render();
     });
 }
-
+// this prevents the default refresh and allows you to search
 form.addEventListener('submit', (ev) => {
   ev.preventDefault();
 
