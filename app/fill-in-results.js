@@ -1,6 +1,3 @@
-
-// import createResultItem from 'netflix-result';
-
 export default function (listElement, listData) {
   listElement.innerHTML = '';
   for (let i = 0; i < listData.length; i++) {
