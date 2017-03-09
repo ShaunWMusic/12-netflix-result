@@ -2,11 +2,35 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>12-netflix-result</title>
+  <title>Netflix</title>
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <section class="section">
 
+  <form class="search-bar">
+
+    <input type="text" class="search" placeholder="Movie Title">
+    <button class="btn">Search</button>
+
+  </form>
+  <div class="result">
+    <div class="result-content">
+      <div class="result-content__item">
+        <div class="result-content__item--text">
+          <h2 class="result-title"></h2>
+          <h5 class="result-category"></h5>
+          <h3><span class="result-rating"></span> <span class="fa fa-star"></span></h3>
+          </div>
+          <img src="http://netflixroulette.net/api/posters/70299043.jpg" alt="" class="result-img"/>
+      </div>
+        <h2>Summary</h2>
+        <p class="result-summary"></p>
+        <h2>Actors</h2>
+        <p class="result-actors"></p>
+      </div>
+      </div>
+    </section>
   <script src="/app.js" charset="utf-8"></script>
 </body>
 </html>
